@@ -1,0 +1,180 @@
+body{
+    background-color: #E8E2E2;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+.logo{
+    background-color: #5D3891;
+    padding: 50px 100px;
+}
+
+.logo a{
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5rem;
+    color: #F5F5F5;
+    text-decoration: none;
+}
+
+.menu{
+    background-color: #F99417;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#openMenu, #closeMenu{
+    background-color: #5D3891;
+    border-color: #F99417;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#closeMenu{
+    display: none;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+.menu li a:hover{
+    background-color: #5D3891;
+    color: #F99417;
+}
+
+@media (max-width: 768px){
+    #openMenu{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+        width: 60%;
+        right: 0;
+        z-index: 9999;
+        position: absolute;
+        height: 100%;
+        right: 0;
+    }
+
+    .menu li{
+        display: block;
+    }
+    
+    .menu li a{
+        display: block;
+    }
+}
+
+section{
+    margin: 100px auto;
+    width: 50%;
+    background-color: #E8E2E2;
+}
+
+@media (max-width: 768px){
+    section{
+        width: 96%;
+    }
+}
+
+.profile{
+    background-color: #5D3891;
+    margin-top: 100px;
+    padding: 40px;
+    border-radius: 1%;
+    text-align: center;
+}
+
+.profile img{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #F99417;
+    border-radius: 100%;
+    margin-bottom: 40px;
+}
+
+.profile p{
+    margin-top: 0px;
+    color: #F5F5F5;
+    font-weight: normal;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.skills, .certificates{
+    margin-top: 100px;
+    background-color: #5D3891;
+    padding: 10px 40px 40px;
+    border-radius: 1%;
+}
+
+.skills h2, .certificates h2{
+    font-family: 'Indie Flower', cursive;
+    color: #F5F5F5;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.skillInfo{
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skillInfo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 20px;
+    border: 2px solid #F99417;
+}
+
+.skillTitle{
+    color: #F5F5F5;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 20px;
+    line-height: 60px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;
+  color:#F99417;
+  line-height: 60px;
+}
+
+.certificatesInfo{
+  text-align: center;
+}
+
+.certificatesInfo img{
+    width: 30%;
+    cursor: zoom-in;
+}
+
+footer{
+    background-color: #F99417;
+    padding: 80px;
+    text-align: center;
+    color: #F5F5F5
+}
+
+footer p{
+    margin-bottom: 0;
+}
